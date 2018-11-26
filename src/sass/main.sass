@@ -3,6 +3,197 @@
 @import "base"
 @import "vars"
 
+.container
+    margin: 0 80px
+.grid
+    display: grid
+header
+    width: 100%
+    background-color: $primary
+    display: flex
+.header__logo
+    color: white
+    text-transform: uppercase
+    font-size: 35px
+    cursor: pointer
+    margin-left: 12%
+    margin-top: 2%
 
+nav
+    margin-top: 3.5%
+    margin-left: 45%
+    a
+        color: $secondary
+        padding: 12px 16px
+        text-align: center
+        transition: all .3s ease 
+        &:hover
+            border-bottom: 3px solid $accent
+main
+    display: flex
+    flex-direction: column
+    width: 100%
+    background-color: $primary
+.main__name
+    text-align: center
+    color: $secondary
+    padding: 200px 0 330px 0
+    h1
+        font-size: 44px
+    .mysite
+        color: $accent
+.info
+    grid-template-columns: repeat(2, 1fr)
+    margin: 5% 10%
+    padding: 40px 0
+.far
+    font-size: 200px
+.main-photo
+    align-self: center
+    padding-left: 10%
+.info-main
+    align-self: center
+    h2
+        display: inline-block
+        text-transform: uppercase
+        font-weight: normal
+        border-bottom: 3px solid $accent
+        padding-bottom: 10px
+        span
+            font-weight: bold
+    p
+        padding-top: 20px 
+.skill
+    text-align: center
+    padding-bottom: 30px
+    color: $secondary
+    background-color: $primary
+    h2
+        text-transform: uppercase
+        padding: 20px 0
+        position: relative
+        &:before 
+            content : ""
+            position: absolute
+            left    : 47.5%
+            bottom  : 0
+            height  : 0
+            width   : 5%
+            border-bottom: 3px solid $accent
+.card
+    grid-template-columns: repeat(3, 1fr)
+    padding: 25px 140px
+    grid-gap: 15%
+    h4
+        font-size: 14px
+        font-weight: normal
+.fab
+    font-size: 250px
+.fa-html5
+    color: hsl(15, 100%, 60%)
+.fa-css3-alt
+    color: hsl(210, 100%, 50%)
+.fa-js-square
+    color: hsl(54, 100%, 50%)
+.work
+    padding-bottom: 40px
+    padding-top: 8px
+    h2
+        text-transform: uppercase
+        padding: 20px 0
+        text-align: center
+        position: relative
+        &:before 
+            content : ""
+            position: absolute
+            left    : 47.5%
+            bottom  : 0
+            height  : 0
+            width   : 5%
+            border-bottom: 3px solid $accent
+.work-item
+    padding-top: 35px
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-gap: 40px
+    justify-items: center
+    .item
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%
+        height: 300px
+        background-color: gray
+        opacity: .7
+        align-items: center
+        justify-items: center
+        transition: all .3s ease
+        a
+            color: black
+        &:hover
+            opacity: 0.9
+            transform: scale(1.02)
+            a
+                color: $accent
+        h3
+            font-weight: normal
+.feedback
+    text-align: center
+    padding-bottom: 30px
+    color: $secondary
+    background-color: $primary
+    h2
+        text-transform: uppercase
+        padding: 20px 0
+        position: relative
+        &:before 
+            content : ""
+            position: absolute
+            left    : 47.5%
+            bottom  : 0
+            height  : 0
+            width   : 5%
+            border-bottom: 3px solid $accent
+form
+    position: relative
+    width: 400px
+    margin: 30px 28.5%
+
+input
+    font-size: 1em
+    width: 590px
+    height: 50px
+    padding: 0px 15px 0px 15px
+    color: white
+    background-color: black
+    border: none
+    border: solid 1px white
+    border-radius: 20px
+    outline: none
+    margin-bottom: 10px
+textarea 
+    font-size: 1em
+    width: 590px
+    height: 100px
+    padding: 15px
+    color: white
+    background-color: black
+    border: solid 1px white
+    border-radius: 20px
+    outline: none
+
+#submit
+    width: 590px
+    border-bottom: 1px solid white
+    color: gray
+footer
+    height: 180px
+    .footer-info
+        padding-top: 70px
+        text-align: center
+    span
+        text-transform: uppercase
+        color: $accent
+        font-weight: bold
 
 @import "media"
