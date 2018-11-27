@@ -27,86 +27,112 @@
         <div class="header__logo">
             <p>mixonich</p>
         </div>
-        <nav>
-            <a href="#about">ABOUT ME</a>
+        <nav class="topnav" id="myTopnav">
+            <a href="#">ABOUT ME</a>
             <a href="#">SKILL</a>
             <a href="#">WORK</a>
             <a href="#">CONTACT</a>
+            <a class="icon" href="#" id="menu">&#9776;</a>
         </nav>
     </header>
+
     <main>
-        <div class="main__name">
+        <div class="main__info">
             <h1>WELCOME TO <span class="mysite">MY SITE</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, consequatur!</p>
         </div>
     </main>
-    <section class="info grid">
-        <img src="img/main-me.png" alt="Logo" class="main-photo img-responsive">
-        <div class="info-main">
-            <h2>some words <span>about me</span></h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minima dolor incidunt sequi sed corporis
-                eum est! Nulla sequi quod numquam quos? Recusandae, accusantium debitis, temporibus, necessitatibus
-                soluta reprehenderit molestias perspiciatis iste quia labore illo.</p>
+
+    <section>
+        <div class="container info grid">
+            <img src="img/main-me.png" alt="Logo" class="main-photo img-responsive">
+            <div class="info__main">
+                <h2>some words <span>about me</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minima dolor incidunt sequi sed corporis
+                    eum est! Nulla sequi quod numquam quos? Recusandae, accusantium debitis, temporibus, necessitatibus
+                    soluta reprehenderit molestias perspiciatis iste quia labore illo.</p>
+            </div>
         </div>
     </section>
+
     <section class="skill">
-        <h2>my skill</h2>
-        <div class="card grid">
-            <div class="card_item">
-                <div class="item_photo"><i class="fab fa-html5"></i></div>
-                <h3>HTML</h3>
-                <h4>High</h4>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo aliquid perspiciatis, corporis
-                    doloribus consequatur?</p>
-            </div>
-            <div class="card_item">
-                <div class="item_photo"><i class="fab fa-css3-alt"></i></div>
-                <h3>CSS</h3>
-                <h4>Medium</h4>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo aliquid perspiciatis, corporis
-                    doloribus consequatur?</p>
-            </div>
-            <div class="card_item">
-                <div class="item_photo"><i class="fab fa-js-square"></i></div>
-                <h3>JS</h3>
-                <h4>Low</h4>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo aliquid perspiciatis, corporis
-                    doloribus consequatur?</p>
+        <div class="container">
+            <h2>my skill</h2>
+            <div class="card grid">
+                <div class="card__item">
+                    <div class="item__photo"><i class="fab fa-html5"></i></div>
+                    <h3>HTML</h3>
+                    <h4>High</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corrupti nemo illum veniam
+                        sapiente, similique deserunt iste quis.</p>
+                </div>
+                <div class="card__item">
+                    <div class="item_photo"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS</h3>
+                    <h4>Medium</h4>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos at quo dicta eos! Officiis
+                        ut voluptate nihil eius.</p>
+                </div>
+                <div class="card__item">
+                    <div class="item_photo"><i class="fab fa-js-square"></i></div>
+                    <h3>JS</h3>
+                    <h4>Low</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo aliquid perspiciatis,
+                        corporis
+                        doloribus consequatur?</p>
+                </div>
             </div>
         </div>
     </section>
+
     <section class="work">
         <div class="container">
             <h2>my work</h2>
             <div class="work-item grid">
-                <div class="item"><a href="#"><h3>FIRST</h3></a></div>
-                <div class="item"><a href="#"><h3>SECOND</h3></a></div>
-                <div class="item"><a href="#"><h3>THIRD</h3></a></div>
-                <div class="item"><a href="#"><h3>FOURTH</h3></a></div>
-                <div class="item"><a href="#"><h3>FIFTH</h3></a></div>
-                <div class="item"><a href="#"><h3>SIXTH</h3></a></div>
+                <div class="item"><a href="#">
+                        <h3>FIRST</h3>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <h3>SECOND</h3>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <h3>THIRD</h3>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <h3>FOURTH</h3>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <h3>FIFTH</h3>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <h3>SIXTH</h3>
+                    </a></div>
             </div>
         </div>
     </section>
+
     <section class="feedback">
         <h2>CONTACT ME</h2>
         <form>
-                <input id="name" type="text" placeholder="NAME">
-                <input id="email" type="text" placeholder="E-MAIL">
-                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                <input id="submit" type="submit" value="GO!">
-            </form>
+            <input id="name" type="text" placeholder="NAME">
+            <input id="email" type="text" placeholder="E-MAIL">
+            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+            <input id="submit" type="submit" value="GO!">
+        </form>
     </section>
-    <link rel="stylesheet" href="css/main.min.css">
-    <script src="js/scripts.min.js"></script>
+
     <footer>
         <div class="footer-info">
             <p>&copy; 2018 <span>mixonich</span></p>
         </div>
     </footer>
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+
 </body>
 
 </html>
