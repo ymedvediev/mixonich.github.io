@@ -7,30 +7,37 @@
 	/**/
 	nav
 		width: 100%
+		margin-left: 3%
+		margin-top: 1%
 		&.responsive
 			position: relative
 			top: 50px
-			left: -230px
+			left: -200px
 			a
 				float: none
 				display: block
 				text-align: left
+				border-bottom: none
+				&:hover:not(:last-child)
+					color: $accent
+					font-size: 18px
 				&.icon
 					position: absolute
 					top: -50px
-					right: -140px
+					right: -200px
 		a
 			display: none
 			&.icon
 				float: right
-				margin-top: -17px
-				display: block
+				clear: both
+				border-bottom: none
+				display: flex
 				color: $secondary
 				font-size: 25px
 	header
 		nav
 			&.responsive
-				height: 230px
+				height: 190px
 	form
 		position: relative
 		width: auto
