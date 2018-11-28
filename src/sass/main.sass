@@ -4,15 +4,13 @@
 @import "vars"
 
 .container
-    margin: 0 7%
+    padding: 25px 7% 75px 7%
+    width: 100%
 .grid
     display: grid
 header
-    width: 100%
     background-color: $primary
     display: flex
-.icon
-    display: none
 .header__logo
     color: $secondary
     text-transform: uppercase
@@ -20,8 +18,7 @@ header
     cursor: pointer
     margin-left: 12%
     margin-top: 2%
-
-nav
+.nav
     margin-top: 3.5%
     margin-left: 40%
     a
@@ -31,24 +28,22 @@ nav
         transition: all .3s ease 
         &:hover
             border-bottom: 3px solid $accent
-main
-    width: 100%
+.icon
+    display: none
+.main-info
+    padding: 15% 0 23% 0
     background-color: $primary
-.main__info
     text-align: center
     color: $secondary
-    padding: 15% 0 23% 0
     h1
         font-size: 44px
     .mysite
         color: $accent
 .info
     grid-template-columns: repeat(2, 1fr)
-    padding: 150px 0
-.far
-    font-size: 200px
-.main-photo
-    align-self: center
+    padding-top: 150px
+    padding-bottom: 150px
+.info__photo
     padding-left: 10%
 .info__main
     align-self: center
@@ -57,66 +52,61 @@ main
         text-transform: uppercase
         font-weight: normal
         border-bottom: 3px solid $accent
-        padding-bottom: 10px
+        padding-bottom: 25px
         span
             font-weight: bold
     p
-        padding-top: 20px 
-.skill
+        padding-top: 30px 
+.skills
     text-align: center
-    padding-bottom: 30px
     color: $secondary
     background-color: $primary
     h2
         text-transform: uppercase
-        padding: 20px 0
         position: relative
+        padding-bottom: 25px
         &:before 
             content : ""
             position: absolute
-            left    : 47%
+            left    : 45%
             bottom  : 0
-            height  : 0
-            width   : 5%
+            height  : 1px
+            width   : 10%
             border-bottom: 3px solid $accent
-.card
+.cards
     grid-template-columns: repeat(3, 1fr)
-    padding: 25px 0
+    padding-top: 25px
     grid-gap: 15%
     h4
         font-size: 14px
         font-weight: normal
 .fab
     font-size: 250px
-
 .fa-html5
     color: hsl(15, 100%, 60%)
 .fa-css3-alt
     color: hsl(210, 100%, 50%)
 .fa-js-square
     color: hsl(54, 100%, 50%)
-.work
-    padding-bottom: 40px
-    padding-top: 8px
+.works
     h2
         text-transform: uppercase
-        padding: 20px 0
+        padding-bottom: 25px
         text-align: center
         position: relative
         &:before 
             content : ""
             position: absolute
-            left    : 47.5%
+            left    : 45%
             bottom  : 0
             height  : 0
-            width   : 5%
+            width   : 10%
             border-bottom: 3px solid $accent
-.work-item
-    padding-top: 35px
+.work-items
+    padding-top: 40px
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat(2, 1fr)
     grid-gap: 40px
-    justify-items: center
     .item
         display: flex;
         justify-content: center;
@@ -125,8 +115,6 @@ main
         height: 300px
         background-color: gray
         opacity: .7
-        align-items: center
-        justify-items: center
         transition: all .3s ease
         a
             color: black
@@ -139,55 +127,53 @@ main
             font-weight: normal
 .feedback
     text-align: center
-    padding-bottom: 1px
     color: $secondary
     background-color: $primary
     h2
         text-transform: uppercase
-        padding: 20px 0
+        padding-bottom: 25px
+        text-align: center
         position: relative
         &:before 
             content : ""
             position: absolute
-            left    : 47.5%
+            left    : 45%
             bottom  : 0
             height  : 0
-            width   : 5%
+            width   : 10%
             border-bottom: 3px solid $accent
-form
+.feedback__form
     position: relative
     display: inline-block
-    margin: 30px 3%
-
-input
-    font-size: 1em
-    width: 100%
-    height: 50px
-    padding: 0px 15px 0px 15px
-    color: $secondary
-    background-color: black
-    border: none
-    border-bottom: solid 1px $secondary
-    border-top: 1px solid $secondary
-    border-radius: 20px
-    outline: none
-    margin-bottom: 10px
-textarea 
-    font-size: 1em
-    width: 100%
-    height: 150px
-    padding: 15px
-    color: $secondary
-    background-color: black
-    border-radius: 20px
-    border: none
-    border-top: solid 1px $secondary
-    border-bottom: solid 1px $secondary
-    outline: none
-    resize: none
-
+    padding-top: 40px
+    input
+        font-size: 1em
+        width: 100%
+        height: 50px
+        padding: 0px 15px 0px 15px
+        color: $secondary
+        background-color: black
+        border: none
+        border-bottom: solid 1px $secondary
+        border-top: 1px solid $secondary
+        border-radius: 20px
+        outline: none
+        margin-bottom: 10px
+    textarea 
+        font-size: 1em
+        width: 100%
+        height: 150px
+        padding: 15px
+        color: $secondary
+        background-color: black
+        border-radius: 20px
+        border: none
+        border-top: solid 1px $secondary
+        border-bottom: solid 1px $secondary
+        outline: none
+        resize: none
 #submit
-    margin-top: 2%
+    margin-top: 5%
     width: 40%
     background-color: $accent
     border: none
@@ -200,10 +186,10 @@ textarea
         transform: scale(1.1)
 footer
     height: 180px
-    .footer-info
+    .footer__info
         padding-top: 70px
         text-align: center
-    span
+    .mixonich
         text-transform: uppercase
         color: $accent
         font-weight: bold

@@ -1,11 +1,7 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-	nav
+	.nav
 		width: 100%
 		margin-left: 3%
 		margin-top: 1%
@@ -35,72 +31,24 @@
 				color: $secondary
 				font-size: 25px
 	header
-		nav
+		.nav
 			&.responsive
 				height: 190px
-	form
-		position: relative
-		width: auto
-		margin: 30px 3%
-/* Medium Devices, Desktops */
+
 @media only screen and (max-width : 992px)
-	/**/
-	.work-item
+	.work-items
 		grid-template-columns: 1fr
-	.card
+	.cards
 		grid-template-columns: 1fr
 		grid-gap: 70px
-	form
+	.feedback__form
 		input
-			display: inline
 			padding: 20px
 	.info
 		grid-template-columns: 1fr
 		text-align: center
-		padding: 50px 0
-	.main-photo
+		padding: 30px 20px
+	.info__photo
 		display: none
 	#submit
 		margin-top: 8%
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
