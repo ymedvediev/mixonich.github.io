@@ -79,6 +79,8 @@ if (ie4up || ns6up) {
 
 //RENEW TEXT
 
-var p = document.getElementById('nameA');
+$('.txt').html(function (i, html) {
+    var chars = $.trim(html).split("");
 
-console.log(p);
+    return '<span>' + chars.join('</span><span>') + '</span>';
+});
