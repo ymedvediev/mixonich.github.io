@@ -36,9 +36,9 @@ for (i = 0; i < no; ++i) {
     dx[i] = 0; // set coordinate variables
     xp[i] = Math.random() * (doc_width - 50); // set position variables
     yp[i] = Math.random() * doc_height;
-    am[i] = Math.random() * 20; // set amplitude variables
-    stx[i] = 0; // set step variables
-    sty[i] = 1 + Math.random(); // set step variables
+    am[i] = Math.random() * 10; // set amplitude variables
+    stx[i] = 0.05; // set step variables
+    sty[i] = 0.7 + Math.random(); // set step variables
     if (ie4up || ns6up) {
         if (i == 0) {
             document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='" + snowsrc + "' border=\"0\"><\/a><\/div>");
