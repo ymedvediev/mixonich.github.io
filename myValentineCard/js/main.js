@@ -1,11 +1,12 @@
 //Configure below to change URL path to the snow image
-var snowsrc = "https://i.gifer.com/4tyu.gif"
+var snowsrc = "heart.gif"
+
 // Configure below to change number of snow to render
-var no = 5;
+var no = 10;
 // Configure whether snow should disappear after x seconds (0=never):
 var hidesnowtime = 1000;
 // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
-var snowdistance = "pageheight";
+var snowdistance = "windowheight";
 ///////////Stop Config//////////////////////////////////
 var ie4up = (document.all) ? 1 : 0;
 var ns6up = (document.getElementById && !document.all) ? 1 : 0;
@@ -36,8 +37,8 @@ for (i = 0; i < no; ++i) {
     xp[i] = Math.random() * (doc_width - 50); // set position variables
     yp[i] = Math.random() * doc_height;
     am[i] = Math.random() * 20; // set amplitude variables
-    stx[i] = 0.02 + Math.random() / 10; // set step variables
-    sty[i] = 0.7 + Math.random(); // set step variables
+    stx[i] = 0; // set step variables
+    sty[i] = 1 + Math.random(); // set step variables
     if (ie4up || ns6up) {
         if (i == 0) {
             document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='" + snowsrc + "' border=\"0\"><\/a><\/div>");
