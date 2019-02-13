@@ -15,10 +15,6 @@ body {
     transition: all .3s ease;
 }
 
-ul {
-    list-style-type: none;
-}
-
 li {
     text-align: center !important;
 }
@@ -35,7 +31,7 @@ ul>li:nth-child(3)>a:hover {
     color: orange;
 }
 
-.cont {
+.container {
     width: 100% !important;
     height: 100% !important;
     display: flex !important;
@@ -45,17 +41,10 @@ ul>li:nth-child(3)>a:hover {
 
 ul {
     padding-left: 0;
+    list-style-type: none;
 }
 
-.cont_a {
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-.cont_a>p {
+.container>p {
     transition: all 1.5s ease;
     width: 100%;
     font-size: 90px;
@@ -66,23 +55,6 @@ ul {
 /*
  * Animation module with all animation code
  */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
-
-.anim-text-flow,
-.anim-text-flow-hover:hover {
-    /*
-    * Animation variables
-    */
-    /*
-    * Elements settings
-    */
-    /*
-    * Keyframe loop
-    */
-    /*
-    * Element animation delay loop
-    */
-}
 
 .anim-text-flow span,
 .anim-text-flow-hover:hover span {
