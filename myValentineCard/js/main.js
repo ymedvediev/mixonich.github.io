@@ -1,13 +1,12 @@
 //Configure below to change URL path to the snow image
 var snowsrc = "heart.gif"
-
 // Configure below to change number of snow to render
 var no = 10;
 // Configure whether snow should disappear after x seconds (0=never):
 var hidesnowtime = 1000;
 // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
 var snowdistance = "windowheight";
-///////////Stop Config//////////////////////////////////
+
 var ie4up = (document.all) ? 1 : 0;
 var ns6up = (document.getElementById && !document.all) ? 1 : 0;
 
@@ -51,7 +50,7 @@ for (i = 0; i < no; ++i) {
 function snowIE_NS6() { // IE and NS6 main animation function
     doc_width = ns6up ? window.innerWidth - 10 : iecompattest().clientWidth - 10;
     doc_height = (window.innerHeight && snowdistance == "windowheight") ? window.innerHeight : (ie4up && snowdistance == "windowheight") ? iecompattest().clientHeight : (ie4up && !window.opera && snowdistance == "pageheight") ? iecompattest().scrollHeight : iecompattest().offsetHeight;
-    for (i = 0; i < no; ++i) { // iterate for every dot
+    for (i = 0; i < no; ++i) {
         yp[i] += sty[i];
         if (yp[i] > doc_height - 50) {
             xp[i] = Math.random() * (doc_width - am[i] - 30);
@@ -76,8 +75,7 @@ if (ie4up || ns6up) {
         setTimeout("hidesnow()", hidesnowtime * 1000)
 }
 
-
-//RENEW TEXT
+// COLORFUL TEXT
 
 $('.txt').html(function (i, html) {
     var chars = $.trim(html).split("");
